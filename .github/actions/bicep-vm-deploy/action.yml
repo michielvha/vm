@@ -38,7 +38,7 @@ runs:
         fetch-depth: 0
 
     - name: Azure Login
-      uses: Azure/login@v1.4.6
+      uses: Azure/login@v2.3.0
       with:
         client-id: ${{ inputs.azureClientId }}
         tenant-id: ${{ inputs.azureTenantId }}
