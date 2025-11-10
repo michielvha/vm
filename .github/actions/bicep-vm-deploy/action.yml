@@ -95,7 +95,7 @@ runs:
         cp ./parameters/${{ inputs.environment }}/${{ inputs.templateFile }}_${{ inputs.location }}.bicepparam ${{ github.workspace }}/artifact/${{ inputs.templateFile }}_${{ inputs.environment }}_${{ inputs.location }}/parameters
     
     - name: Publish artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v5
       with:
         name: artifact_${{ inputs.templateFile }}_${{ inputs.environment }}_${{ inputs.location }}
         path: ${{ github.workspace }}/artifact/${{ inputs.templateFile }}_${{ inputs.environment }}_${{ inputs.location }}
